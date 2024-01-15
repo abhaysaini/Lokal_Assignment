@@ -42,7 +42,7 @@ class CurrencyAdapter(
             binding.apply {
                 cryptoName.text = cryptoCurr.name
                 cryptoSymbol.text = cryptoCurr.symbol
-                cryptoValue.text = roundTo6DecimalPlaces(cryptoCurr.crypto_rate) + "$"
+                cryptoValue.text = roundTo6DecimalPlaces(cryptoCurr.crypto_rate) + " $"
                 Glide.with(context).load(
                     cryptoCurr.image_url
                 ).into(image)

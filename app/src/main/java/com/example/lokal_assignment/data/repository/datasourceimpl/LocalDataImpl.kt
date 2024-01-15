@@ -1,4 +1,6 @@
 package com.example.lokal_assignment.data.repository.datasourceimpl
 
-class LocalDataImpl {
+import com.example.lokal_assignment.data.repository.datasource.LocalData
+
+class LocalDataImpl : LocalData {
 }

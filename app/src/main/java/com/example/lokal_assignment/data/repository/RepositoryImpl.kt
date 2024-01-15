@@ -18,7 +18,6 @@ class RepositoryImpl(
 
     override suspend fun getCurrencyList(): Resource<Map<String, CryptoAPIResponse>> {
         if(isNetworkAvailable(applicationContext)){
-            // Try to get it from cache
             val cryptoCurrencyListMap = cacheData.getCryptoCurrencyListFromCache()
             if(cryptoCurrencyListMap.size > 0) return Resource.Success(cryptoCurrencyListMap)
 

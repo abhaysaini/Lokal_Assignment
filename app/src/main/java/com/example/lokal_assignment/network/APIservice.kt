@@ -8,8 +8,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface APIservice {
-
-
     @GET("list")
     suspend fun getAllCryptoCurrencyList(
         @Query("access_key")
