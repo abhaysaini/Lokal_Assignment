@@ -1,4 +1,4 @@
-package com.example.lokal_assignment
+package com.example.lokal_assignment.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

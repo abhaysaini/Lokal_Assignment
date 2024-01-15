@@ -31,8 +31,8 @@ class RepositoryImpl(
                 return Resource.Error(response.message())
             }
         }
-        throw IllegalStateException("Internet not connected")
-        return Resource.Error("Internet is not available.")
+        throw IllegalStateException("Internet is not available")
+        return Resource.Error("Internet is not available")
     }
 
     override suspend fun getLiveExchangeRates(): Resource<Map<String, Double>> {
@@ -46,7 +46,7 @@ class RepositoryImpl(
                 return Resource.Error(response.message())
             }
         }
-        throw IllegalStateException("Internet not connected")
-        return Resource.Error("Internet is not available.")
+        throw IllegalStateException("Internet is not available")
+        return Resource.Error("Internet is not available")
     }
 }

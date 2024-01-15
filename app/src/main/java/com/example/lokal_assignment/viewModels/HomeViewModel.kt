@@ -29,7 +29,7 @@ class HomeViewModel(
         refreshCryptoCurrency()
     }
 
-    private fun refreshCryptoCurrency() {
+    fun refreshCryptoCurrency() {
         viewModelScope.launch(Dispatchers.IO) {
             cryptoCurrencyList.postValue(Resource.Loading())
             try {
